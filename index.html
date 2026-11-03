@@ -1,0 +1,494 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Tychique Bakala · Portfolio de direction artistique</title>
+<meta name="description" content="Portfolio de Tychique Bakala, directeur artistique et designer digital à Brazzaville : campagnes Umoja, AFG Bank, Orange Burkina, MTN Congo.">
+<meta property="og:title" content="Tychique Bakala · Portfolio 2026">
+<meta property="og:description" content="Directeur artistique et designer digital à Brazzaville. Campagnes, social media, identité.">
+<meta property="og:image" content="img/umoja-axe1a.jpg">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='50' fill='%232F3FE0'/%3E%3Ctext x='50' y='66' text-anchor='middle' font-family='Impact,sans-serif' font-size='48' fill='%23F6EEE2'%3ETB%3C/text%3E%3C/svg%3E">
+<style>body{margin:0}</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;800;900&family=Figtree:ital,wght@0,400;0,500;0,700;1,500&display=swap">
+<style>
+/* Layout : crème granuleux, un seul bleu cobalt ; pages de transition pleine couleur ; projets = texte à gauche, grille d'images à droite. */
+:root{
+  --cream:#F6EEE2;
+  --cream-2:#EFE4D3;
+  --ink:#0E1238;
+  --cobalt:#2F3FE0;
+  --cobalt-deep:#0E1238;
+  --muted:#4A4E6E;
+  --line:#0E1238;
+  --on-cobalt:#F6EEE2;
+  --display:"Big Shoulders Display","Bebas Neue","Arial Narrow",Impact,sans-serif;
+  --body:"Figtree","Helvetica Neue",Arial,sans-serif;
+  --r:22px;
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+body{
+  background:var(--cream);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.55;
+  background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='180' height='180'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0.05  0 0 0 0 0.07  0 0 0 0 0.22  0 0 0 .07 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>");
+}
+img{max-width:100%;display:block}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--cobalt);outline-offset:3px}
+.wrap{max-width:1240px;margin:0 auto;padding-left:max(20px,env(safe-area-inset-left,0px));padding-right:max(20px,env(safe-area-inset-right,0px))}
+.display{font-family:var(--display);font-weight:900;text-transform:uppercase;line-height:.86;letter-spacing:-.005em}
+.eyebrow{font-size:.78rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase}
+
+/* Marque */
+.mark{width:44px;height:44px;flex:none}
+.marks{display:flex;gap:6px;align-items:center}
+
+/* ---------- HERO ---------- */
+.hero{position:relative;overflow:hidden;padding-block:clamp(40px,7vw,90px) 34px}
+.hero::before,.hero::after{content:"";position:absolute;top:50%;width:min(42vw,520px);aspect-ratio:1;background:var(--cobalt);border-radius:50%;transform:translateY(-50%)}
+.hero::before{left:0;translate:-72% 0}
+.hero::after{right:0;translate:72% 0}
+.hero-inner{position:relative;z-index:1;display:flex;flex-direction:column;align-items:center;gap:clamp(20px,3vw,34px)}
+.by{font-size:1.05rem;display:flex;align-items:baseline;gap:.4em}
+.by b{font-family:var(--display);font-weight:900;font-size:clamp(1.6rem,3.2vw,2.6rem);text-transform:uppercase;letter-spacing:.01em}
+.title-row{display:flex;align-items:stretch;gap:clamp(8px,1.6vw,20px)}
+.vert{writing-mode:vertical-rl;rotate:180deg;font-weight:700;color:var(--cobalt);font-size:clamp(.95rem,2.1vw,1.9rem);letter-spacing:.06em;text-transform:uppercase;text-align:center}
+.big{color:var(--cobalt);font-size:clamp(5.2rem,17vw,15rem)}
+.big span{display:block}
+.big .yr{display:inline-block;margin-left:.12em}
+.hero-foot{display:flex;align-items:center;gap:20px;width:100%;max-width:1100px}
+.hero-foot hr{flex:1;border:0;border-top:2px solid var(--line);margin:0}
+.hero-foot small{font-size:.85rem;color:var(--muted)}
+
+/* ---------- MARQUEE ---------- */
+.band{background:var(--cobalt-deep);color:var(--cobalt);overflow:hidden;white-space:nowrap;padding-block:12px}
+.band .track{display:inline-flex;gap:28px;align-items:center;animation:slide 38s linear infinite}
+.band span{font-family:var(--display);font-weight:800;font-size:1.7rem;text-transform:uppercase;letter-spacing:.02em;color:#7C88FF}
+.band svg{width:22px;height:22px;flex:none}
+@keyframes slide{to{transform:translateX(-50%)}}
+@media (prefers-reduced-motion:reduce){.band .track{animation:none}}
+
+/* ---------- À PROPOS ---------- */
+.about{padding-block:clamp(56px,8vw,110px)}
+.about-grid{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:clamp(32px,5vw,72px);align-items:start}
+.portrait{position:relative;aspect-ratio:4/5;max-width:440px}
+.portrait .blob{position:absolute;inset:8% 0 0 8%;background:var(--cobalt);border-radius:70px 70px 70px 200px}
+.portrait .photo{position:absolute;inset:0 8% 8% 0;width:92%;height:92%;object-fit:cover;object-position:50% 20%;border-radius:70px 70px 200px 70px}
+.portrait .ph{position:absolute;inset:0 8% 8% 0;border:2px dashed var(--ink);border-radius:70px 70px 200px 70px;background:var(--cream-2);display:grid;place-items:center;text-align:center;padding:24px;font-weight:500;color:var(--muted)}
+h2.h{color:var(--cobalt);font-size:clamp(2.8rem,6vw,4.6rem);display:flex;align-items:center;gap:14px;margin:0 0 18px}
+h2.h svg{width:.55em;height:.55em}
+.about p{margin:0 0 14px;max-width:62ch;font-size:1.12rem}
+.about hr{border:0;border-top:2px solid var(--cobalt);margin:30px 0}
+.facts{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:28px 40px}
+.facts h3{font-family:var(--display);font-weight:900;text-transform:uppercase;font-size:1.9rem;line-height:1;color:var(--cobalt);margin:0 0 12px}
+.facts ul{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+.facts li{font-size:1rem}
+.facts li b{display:block}
+.facts .full{grid-column:1/-1}
+.xp{gap:14px!important}
+.xp li{display:grid;grid-template-columns:104px minmax(0,1fr);gap:14px;color:var(--muted)}
+.xp li span{font-weight:700;color:var(--cobalt);font-variant-numeric:tabular-nums}
+.xp li b{color:var(--ink)}
+.contact a{font-weight:700;text-underline-offset:3px}
+.todo{display:inline-block;background:#FFE58A;color:var(--ink);border-radius:6px;padding:1px 8px;font-size:.88rem;font-weight:700}
+
+/* ---------- DIVIDER ---------- */
+.divider{background:var(--cobalt);color:var(--on-cobalt);padding-block:clamp(70px,11vw,150px) 40px}
+.divider .inner{display:flex;flex-direction:column;align-items:center;gap:26px;text-align:center}
+.divider .display{font-size:clamp(4.4rem,13vw,10.5rem)}
+.divider p{margin:0;max-width:46ch;font-size:1.1rem}
+.divider svg.ast{width:64px;height:64px}
+.divider .foot{display:flex;align-items:center;gap:20px;width:100%;margin-top:clamp(40px,6vw,80px)}
+.divider .foot hr{flex:1;border:0;border-top:2px solid var(--cobalt-deep);margin:0}
+
+/* ---------- PROJET ---------- */
+.project{padding-block:clamp(56px,8vw,110px);border-bottom:2px solid var(--cream-2)}
+.proj-grid{display:grid;grid-template-columns:minmax(0,4fr) minmax(0,8fr);gap:clamp(28px,4vw,60px);align-items:start}
+.proj-text{position:sticky;top:calc(env(safe-area-inset-top,0px) + 24px)}
+.proj-text .eyebrow{color:var(--muted)}
+.proj-text h3{font-family:var(--display);font-weight:900;text-transform:uppercase;font-size:clamp(2.8rem,5.4vw,4.4rem);line-height:.88;margin:14px 0 18px}
+.proj-text p{margin:0 0 14px;max-width:46ch}
+.quote{font-weight:500;font-style:italic;font-size:1.12rem;border-left:4px solid var(--cobalt);padding-left:14px}
+.result{display:inline-flex;align-items:center;gap:8px;background:var(--cobalt);color:var(--on-cobalt);font-weight:700;border-radius:999px;padding:6px 14px;font-size:.92rem;margin-bottom:18px}
+.result.neutral{background:transparent;color:var(--ink);border:2px solid var(--ink)}
+.meta{display:grid;grid-template-columns:auto 1fr;gap:6px 16px;font-size:.95rem;margin:20px 0 0}
+.meta dt{font-weight:700}
+.meta dd{margin:0;color:var(--muted)}
+.swatches{display:flex;gap:10px;margin-top:22px}
+.swatches i{width:52px;height:52px;border-radius:14px;border:1.5px solid rgba(14,18,56,.18)}
+
+.bento{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:14px}
+.bento figure{margin:0;border-radius:var(--r);overflow:hidden;background:var(--cream-2);position:relative}
+.bento img{width:100%;height:100%;object-fit:cover;cursor:zoom-in;transition:transform .5s ease}
+.bento figure:hover img{transform:scale(1.025)}
+@media (prefers-reduced-motion:reduce){.bento img{transition:none}.bento figure:hover img{transform:none}}
+.bento figcaption{position:absolute;right:12px;top:12px;background:var(--cream);color:var(--ink);font-size:.8rem;font-weight:700;border-radius:999px;padding:4px 12px}
+.s6{grid-column:span 6}.s4{grid-column:span 4}.s3{grid-column:span 3}.s2{grid-column:span 2}
+.wide{aspect-ratio:16/9}.std{aspect-ratio:16/10}.sq{aspect-ratio:1}.tall{aspect-ratio:4/5}
+.ratio-afg{aspect-ratio:1600/821}
+.ratio-umoja{aspect-ratio:1105/825}
+.ratio-2{aspect-ratio:2/1}
+.ratio-pelissa{aspect-ratio:1500/1009}
+.tall figcaption,.ratio-pelissa figcaption{display:none}
+.ratio-or{aspect-ratio:2/1}
+
+.steps{list-style:none;margin:18px 0 0;padding:0;display:grid;gap:10px}
+.steps li{display:grid;grid-template-columns:110px 1fr;gap:12px;font-size:.96rem}
+.steps li b{font-family:var(--display);font-weight:800;text-transform:uppercase;font-size:1.15rem;color:var(--cobalt);line-height:1.2}
+
+/* ---------- GALERIE ---------- */
+.gallery{padding-block:clamp(56px,8vw,100px)}
+.gal-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.card{margin:0;display:flex;flex-direction:column;gap:12px}
+.card .img{border-radius:var(--r);overflow:hidden;aspect-ratio:808/632;background:var(--cream-2)}
+.card img{width:100%;height:100%;object-fit:cover;cursor:zoom-in}
+.card h4{margin:0;font-family:var(--display);font-weight:900;text-transform:uppercase;font-size:1.6rem;line-height:1}
+.card p{margin:2px 0 0;font-size:.92rem;color:var(--muted)}
+.card a{font-weight:700;font-size:.9rem;text-underline-offset:3px}
+.card.intro{justify-content:center;padding:24px;background:var(--cobalt);color:var(--on-cobalt);border-radius:var(--r)}
+.card.intro h4{font-size:2.6rem}
+.card.intro p{color:var(--on-cobalt);font-size:1rem}
+
+/* ---------- CONTACT ---------- */
+.end{background:var(--cobalt-deep);color:var(--cream);padding-block:clamp(70px,10vw,130px) 40px}
+.end .display{color:var(--cream);font-size:clamp(4rem,12vw,10rem)}
+.end .display em{font-style:normal;color:#7C88FF}
+.end-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:24px;margin-top:48px;border-top:2px solid #2A2F66;padding-top:28px}
+.end-grid div{display:grid;gap:4px;min-width:0}
+.end-grid span{font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;color:#9EA6E8;font-weight:700}
+.end-grid a,.end-grid p{color:var(--cream);font-weight:700;font-size:1.08rem;margin:0;overflow-wrap:anywhere}
+.end .todo{color:var(--ink)}
+.end small{display:block;margin-top:48px;color:#9EA6E8}
+
+/* ---------- LIGHTBOX ---------- */
+dialog{border:0;padding:0;background:transparent;max-width:min(94vw,1500px);max-height:92vh}
+dialog::backdrop{background:rgba(14,18,56,.88)}
+dialog img{max-height:86vh;width:auto;border-radius:14px}
+dialog button{position:fixed;top:calc(16px + env(safe-area-inset-top,0px));right:calc(16px + env(safe-area-inset-right,0px));width:48px;height:48px;border-radius:50%;border:2px solid var(--cream);background:var(--ink);color:var(--cream);font-size:1.4rem;cursor:pointer}
+
+.pdf-btn{display:inline-flex;align-items:center;min-height:44px;padding:0 18px;border-radius:999px;background:var(--cobalt);color:var(--on-cobalt);font-weight:700;font-size:.92rem;text-decoration:none;white-space:nowrap}
+.pdf-btn:hover{background:var(--ink)}
+.pdf-btn.light{background:var(--cream);color:var(--ink)}
+.pdf-end{margin:40px 0 0}
+/* ---------- RESPONSIVE ---------- */
+@media (max-width:900px){
+  .about-grid,.proj-grid{grid-template-columns:minmax(0,1fr)}
+  .proj-text{position:static}
+  .portrait{max-width:340px}
+  .gal-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .end-grid{grid-template-columns:minmax(0,1fr)}
+}
+@media (max-width:560px){
+  .facts{grid-template-columns:minmax(0,1fr)}
+  .bento{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+  .s6,.s4{grid-column:span 2}.s3{grid-column:span 2}.s2{grid-column:span 1}
+  .gal-grid{grid-template-columns:minmax(0,1fr)}
+  .hero::before,.hero::after{width:34vw;top:auto;bottom:0;transform:none}
+  .hero::before{translate:-60% 0}
+  .hero::after{translate:60% 0}
+  .steps li,.xp li{grid-template-columns:minmax(0,1fr);gap:2px}
+  .hero-foot .pdf-btn{font-size:.85rem;padding:0 14px}
+}
+</style>
+</head>
+<body>
+
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="ast" viewBox="0 0 100 100"><g fill="currentColor"><rect x="44" y="2" width="12" height="96" rx="6"/><rect x="44" y="2" width="12" height="96" rx="6" transform="rotate(45 50 50)"/><rect x="44" y="2" width="12" height="96" rx="6" transform="rotate(90 50 50)"/><rect x="44" y="2" width="12" height="96" rx="6" transform="rotate(135 50 50)"/></g></symbol>
+    <symbol id="mono" viewBox="0 0 100 100"><circle cx="50" cy="50" r="46" fill="none" stroke="currentColor" stroke-width="6"/><text x="50" y="67" text-anchor="middle" font-family="Big Shoulders Display, Impact, sans-serif" font-weight="900" font-size="50" fill="currentColor">TB</text></symbol>
+    <symbol id="astc" viewBox="0 0 100 100"><circle cx="50" cy="50" r="46" fill="none" stroke="currentColor" stroke-width="6"/><use href="#ast" x="24" y="24" width="52" height="52"/></symbol>
+  </defs>
+</svg>
+
+<!-- HERO -->
+<header class="hero">
+  <div class="wrap hero-inner">
+    <div class="by">par <b>Tychique Bakala</b></div>
+    <div class="title-row">
+      <div class="vert">Direction artistique</div>
+      <h1 class="big display" aria-label="Portfolio 2026"><span>Port<span class="yr">20</span></span><span>Folio<span class="yr">26</span></span></h1>
+    </div>
+    <div class="hero-foot">
+      <div class="marks"><svg class="mark"><use href="#mono"/></svg><svg class="mark"><use href="#astc"/></svg></div>
+      <hr>
+      <a class="pdf-btn" href="Portfolio-Tychique-Bakala.pdf" download>Télécharger le PDF</a>
+    </div>
+  </div>
+</header>
+
+<div class="band" aria-hidden="true"><div class="track" id="track">
+  <span>Tychique Bakala</span><svg><use href="#astc"/></svg><span>Directeur artistique</span><svg><use href="#mono"/></svg><span>Designer digital</span><svg><use href="#astc"/></svg><span>Brazzaville</span><svg><use href="#astc"/></svg><span>Portfolio 2026</span><svg><use href="#mono"/></svg>
+</div></div>
+
+<!-- À PROPOS -->
+<section class="about" id="a-propos">
+  <div class="wrap about-grid">
+    <div class="portrait">
+      <div class="blob"></div>
+      <img class="photo" src="img/portrait.jpg" alt="Portrait de Tychique Bakala, polo noir sur fond bleu">
+    </div>
+    <div>
+      <h2 class="h display">À propos <svg><use href="#ast"/></svg></h2>
+      <p>Je suis directeur artistique et designer digital à Brazzaville, depuis 2018. Je conçois des campagnes publicitaires pour des marques de télécoms, de banque et de microfinance en Afrique centrale et de l'Ouest.</p>
+      <p>Je travaille de l'insight jusqu'au dernier support : idée centrale, accroches, direction artistique, puis déclinaison en affichage, réseaux sociaux, vidéo, flyers et objets de marque. Ma licence en génie logiciel me permet aussi de concevoir des maquettes web et de parler le même langage que les développeurs.</p>
+      <hr>
+      <div class="facts">
+        <div class="full">
+          <h3>Expérience</h3>
+          <ul class="xp">
+            <li><span>2025 – auj.</span><div><b>Designer digital · Cyclone Congo</b>Pilotage des campagnes digitales, visuels social media et display, concepts créatifs, motion et montage vidéo.</div></li>
+            <li><span>2021 – 2024</span><div><b>Directeur artistique junior · MWDDB Congo</b>Concepts publicitaires, supports de communication, logos, illustration, motion.</div></li>
+            <li><span>2020 – 2021</span><div><b>Designer graphique et monteur vidéo · Allamba</b>Supports de communication, logos, montage de vidéos événementielles.</div></li>
+            <li><span>2019 – 2021</span><div><b>Designer graphique et développeur web · SOPECO</b>Supports, maquettes web, branding des bus PosteVoyage, outil d'automatisation interne.</div></li>
+            <li><span>2018 – 2019</span><div><b>Designer graphique et développeur web · CFI-CIRAS</b>Maquettes web et logiciel de gestion pour une université.</div></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Outils</h3>
+          <ul>
+            <li>Illustrator, Photoshop, InDesign</li>
+            <li>After Effects, Premiere Pro</li>
+            <li>HTML, CSS, PHP, SQL</li>
+            <li>Agorapulse</li>
+            <li>IA : Freepik AI, ChatGPT, Claude, génération d'images et de vidéos</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Formation</h3>
+          <ul>
+            <li><b>Licence en génie logiciel</b>CFI-CIRAS, Brazzaville · 2014 – 2017</li>
+            <li><b>Marketing digital</b>Google Atelier Digital</li>
+            <li><b>Animation flat design</b>Udemy</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Langues</h3>
+          <ul>
+            <li>Français · courant</li>
+            <li>Anglais · intermédiaire</li>
+            <li>Lingala · intermédiaire</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Contact</h3>
+          <ul class="contact">
+            <li>tychique.bakala@gmail.com</li>
+            <li>+242 06 931 66 66</li>
+            <li><a href="https://www.linkedin.com/in/tychique-le-saint-bakala-653146172/" target="_blank" rel="noopener">LinkedIn</a> · <a href="https://www.behance.net/tychiqueba791a" target="_blank" rel="noopener">Behance</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DIVIDER CAMPAGNES -->
+<section class="divider">
+  <div class="wrap inner">
+    <svg class="ast"><use href="#ast" fill="var(--cobalt-deep)" style="color:var(--cobalt-deep)"/></svg>
+    <h2 class="display">Cam<br>pagnes</h2>
+    <p>Trois plateformes complètes, conçues pour des appels d'offres : de l'insight à l'affiche.</p>
+    <div class="foot"><svg class="mark" style="color:var(--cobalt-deep)"><use href="#mono"/></svg><hr><svg class="mark" style="color:var(--cobalt-deep)"><use href="#astc"/></svg></div>
+  </div>
+</section>
+
+<!-- UMOJA -->
+<article class="project" id="umoja">
+  <div class="wrap proj-grid">
+    <div class="proj-text">
+      <div class="eyebrow">Campagne · Back to School 2026</div>
+      <h3>Crédit Scolaire Umoja</h3>
+      <div class="result"><svg width="16" height="16"><use href="#ast"/></svg> Appel d'offres remporté</div>
+      <p>Chaque rentrée, les petits commerçants doivent choisir entre renouveler leur stock et payer la scolarité de leurs enfants. Le Crédit Scolaire Umoja leur évite ce choix.</p>
+      <p class="quote">« Derrière chaque petit commerce se cache un grand avenir. »</p>
+      <p>L'idée repositionne le commerçant : chaque client servi contribue à bâtir l'avenir d'un enfant. Une spirale lumineuse, tirée du cercle du logo Umoja, relie l'enfant au commerce sur tous les visuels.</p>
+      <ol class="steps">
+        <li><b>Axe 1</b><span>« Le rêve avant tout » : l'enfant part à l'école, le parent salue depuis sa boutique.</span></li>
+        <li><b>Axe 2</b><span>« Le relais » : votre commerce avance, leur avenir aussi.</span></li>
+      </ol>
+      <dl class="meta">
+        <dt>Client</dt><dd>Umoja Micro Credit Services</dd>
+        <dt>Livrables</dt><dd>Plateforme créative, affichage, flyers, goodies, éléments de langage</dd>
+        <dt>Rôle</dt><dd>Direction artistique et création</dd>
+      </dl>
+      <div class="swatches" aria-label="Palette"><i style="background:#1D3B50"></i><i style="background:#2E9A47"></i><i style="background:#7BE38F"></i><i style="background:#E3F5EF"></i></div>
+    </div>
+    <div class="bento">
+      <figure class="s3 ratio-umoja"><img loading="lazy" src="img/umoja-axe1a.jpg" alt="Umoja, axe 1 : une écolière quitte la boucherie de sa mère, entourée d'une spirale verte"><figcaption>Axe 1 · Le rêve avant tout</figcaption></figure>
+      <figure class="s3 ratio-umoja"><img loading="lazy" src="img/umoja-axe1b.jpg" alt="Umoja, axe 1 : un collégien devant une alimentation générale"></figure>
+      <figure class="s3 ratio-umoja"><img loading="lazy" src="img/umoja-axe2b.jpg" alt="Umoja, axe 2 : une mère au marché prépare son fils pour la rentrée"></figure>
+      <figure class="s3 ratio-umoja"><img loading="lazy" src="img/umoja-axe2a.jpg" alt="Umoja, axe 2 : un père et sa fille dans une librairie, sac à dos neuf"><figcaption>Axe 2 · Le relais</figcaption></figure>
+      <figure class="s6 ratio-2"><img loading="lazy" src="img/umoja-affichage1.jpg" alt="Affiche Umoja axe 1 sur un panneau 4x3"><figcaption>Affichage</figcaption></figure>
+      <figure class="s6 ratio-2"><img loading="lazy" src="img/umoja-affichage2.jpg" alt="Affiche Umoja axe 2 sur un panneau 4x3"></figure>
+      <figure class="s3 ratio-2"><img loading="lazy" src="img/umoja-tshirt.jpg" alt="T-shirt Umoja recto verso"><figcaption>Goodies</figcaption></figure>
+      <figure class="s3 ratio-2"><img loading="lazy" src="img/umoja-mug.jpg" alt="Mugs Umoja blanc et vert"></figure>
+      <figure class="s3 ratio-2"><img loading="lazy" src="img/umoja-casquette.jpg" alt="Casquette verte Umoja"></figure>
+      <figure class="s3 ratio-2"><img loading="lazy" src="img/umoja-bracelet.jpg" alt="Bracelets Umoja blanc et vert"></figure>
+    </div>
+  </div>
+</article>
+
+<!-- AFG -->
+<article class="project" id="afg">
+  <div class="wrap proj-grid">
+    <div class="proj-text">
+      <div class="eyebrow">Campagne bancaire · Appel d'offres</div>
+      <h3>AFG Bank<br>« Et tout devient possible »</h3>
+      <div class="result"><svg width="16" height="16"><use href="#ast"/></svg> Volet digital remporté</div>
+      <p>Une plateforme qui montre la banque présente aux moments qui comptent, pour des clients très différents : une créatrice qui vend sur TikTok, une cliente au salon de beauté, un moto-taxi la nuit, une gagnante sur scène.</p>
+      <p>Le système tient en trois éléments fixes : un panneau dégradé bleu-vert, une accroche « Présent… » déclinée selon la situation, et la signature « …Et tout devient possible ». Le symbole AFG, agrandi, passe dans le décor.</p>
+      <dl class="meta">
+        <dt>Client</dt><dd>AFG Bank · Atlantic Group</dd>
+        <dt>Agence</dt><dd>Cyclone</dd>
+        <dt>Rôle</dt><dd>Direction artistique et création</dd>
+      </dl>
+      <div class="swatches" aria-label="Palette"><i style="background:#1C2B5C"></i><i style="background:#0F6E5F"></i><i style="background:#E3141B"></i><i style="background:#3DB54A"></i></div>
+    </div>
+    <div class="bento">
+      <figure class="s6 ratio-afg"><img loading="lazy" src="img/afg-4.jpg" alt="AFG Bank : un moto-taxi consulte son téléphone la nuit, « Présent, à tout moment ! »"><figcaption>Présent, à tout moment</figcaption></figure>
+      <figure class="s3 ratio-afg"><img loading="lazy" src="img/afg-1.jpg" alt="AFG Bank : une créatrice TikTok Shop, « Présent pour démarrer sereinement ! »"></figure>
+      <figure class="s3 ratio-afg"><img loading="lazy" src="img/afg-2.jpg" alt="AFG Bank : une cliente au salon de beauté tient sa carte, « Présent, quand ça compte ! »"></figure>
+      <figure class="s6 ratio-afg"><img loading="lazy" src="img/afg-3.jpg" alt="AFG Bank : une femme en robe dorée sous les confettis brandit sa carte Visa"></figure>
+    </div>
+  </div>
+</article>
+
+<!-- ORANGE -->
+<article class="project" id="orange">
+  <div class="wrap proj-grid">
+    <div class="proj-text">
+      <div class="eyebrow">Campagne télécom · Appel d'offres</div>
+      <h3>Orange Burkina<br>« Le Burkina d'abord »</h3>
+      <div class="result neutral">Proposition pour appel d'offres</div>
+      <p>Une mécanique d'écriture simple et déclinable à l'infini : « Quand [quelque chose arrive], le Burkina [avance, gagne, prospère, innove, s'épanouit]. » Le pays est le héros, la marque l'accompagne.</p>
+      <p>Un cadre orange, repris du carré du logo, isole le personnage. La phrase de chute vient le traverser. Cinq visuels couvrent cinq territoires : culture, entreprise, musique, numérique et artisanat.</p>
+      <dl class="meta">
+        <dt>Client</dt><dd>Orange Burkina Faso</dd>
+        <dt>Rôle</dt><dd>Direction artistique et création</dd>
+      </dl>
+      <div class="swatches" aria-label="Palette"><i style="background:#FF7900"></i><i style="background:#FFFFFF"></i><i style="background:#111111"></i><i style="background:#EF2B2D"></i></div>
+    </div>
+    <div class="bento">
+      <figure class="s6 ratio-or"><img loading="lazy" src="img/orange-1.jpg" alt="Orange : un homme prend un selfie pendant une fête de masques, « Quand vous avancez, le Burkina aussi »"><figcaption>Quand vous avancez, le Burkina aussi</figcaption></figure>
+      <figure class="s3 ratio-or"><img loading="lazy" src="img/orange-2.jpg" alt="Orange Business : une femme d'affaires célèbre, « le Burkina gagne »"></figure>
+      <figure class="s3 ratio-or"><img loading="lazy" src="img/orange-3.jpg" alt="Orange : un chanteur sur scène, « le Burkina prospère »"></figure>
+      <figure class="s3 ratio-or"><img loading="lazy" src="img/orange-4.jpg" alt="Orange : une étudiante et son mentor devant un ordinateur, « le Burkina innove »"></figure>
+      <figure class="s3 ratio-or"><img loading="lazy" src="img/orange-5.jpg" alt="Orange : une artisane sculpte un masque, « le Burkina s'épanouit »"></figure>
+    </div>
+  </div>
+</article>
+
+<!-- DIVIDER DIGITAL -->
+<section class="divider">
+  <div class="wrap inner">
+    <svg class="ast" style="color:var(--cobalt-deep)"><use href="#ast"/></svg>
+    <h2 class="display">Digi<br>tal</h2>
+    <p>Contenus pour les réseaux sociaux : rubriques récurrentes, temps forts et posts d'engagement.</p>
+    <div class="foot"><svg class="mark" style="color:var(--cobalt-deep)"><use href="#mono"/></svg><hr><svg class="mark" style="color:var(--cobalt-deep)"><use href="#astc"/></svg></div>
+  </div>
+</section>
+
+<!-- MTN 5G -->
+<article class="project" id="mtn-5g">
+  <div class="wrap proj-grid">
+    <div class="proj-text">
+      <div class="eyebrow">Social media · 2025</div>
+      <h3>MTN Congo<br>« Réseau charismatique 5G »</h3>
+      <p>Une ligne éditoriale pour faire vivre la plateforme 5G de MTN au quotidien. La signature revient sur chaque post : « le charismatique me couvre ».</p>
+      <p>Des ondes jaunes, comme un signal réseau, entourent les personnages et relient tous les visuels. La rubrique « La phrase du jour » apporte la régularité, les temps forts comme la fête du travail apportent l'actualité, et les posts d'engagement font réagir la communauté.</p>
+      <dl class="meta">
+        <dt>Client</dt><dd>MTN Congo</dd>
+        <dt>Format</dt><dd>Posts 4:5, Facebook et Instagram</dd>
+      </dl>
+      <div class="swatches" aria-label="Palette"><i style="background:#FFCB05"></i><i style="background:#111111"></i><i style="background:#FFFFFF"></i></div>
+    </div>
+    <div class="bento">
+      <figure class="s3 tall"><img loading="lazy" src="img/digital-mtn5g-1.jpg" alt="La phrase du jour : une sportive en casque de réalité virtuelle, « Ne limite pas tes défis, défie tes limites ! »"><figcaption>La phrase du jour</figcaption></figure>
+      <figure class="s3 tall"><img loading="lazy" src="img/digital-mtn5g-2.jpg" alt="La phrase du jour : un chauffeur de taxi souriant, « Le possible réside dans la détermination »"></figure>
+      <figure class="s3 tall"><img loading="lazy" src="img/digital-mtn5g-3.jpg" alt="Fête du travail : un homme se détend près d'un routeur 5G MTN, « Même un jour de repos mérité, le charismatique me couvre »"><figcaption>Temps fort</figcaption></figure>
+      <figure class="s3 tall"><img loading="lazy" src="img/digital-mtn5g-4.jpg" alt="Post d'engagement sur fond jaune : « Décris ton travail avec 3 emojis »"><figcaption>Engagement</figcaption></figure>
+    </div>
+  </div>
+</article>
+
+<!-- MTN PROMOS -->
+<article class="project" id="mtn-offres">
+  <div class="wrap proj-grid">
+    <div class="proj-text">
+      <div class="eyebrow">Social media · Offres et promotions</div>
+      <h3>MTN Congo<br>Pélissa Bonana et MTN Business</h3>
+      <p><b>Pélissa Bonana</b> est le jeu de fin d'année de MTN. Un personnage en pagne aux couleurs de la marque abaisse un interrupteur géant : les lots apparaissent et « vos fêtes s'illuminent ». Le logo de l'opération est dessiné comme une guirlande.</p>
+      <p><b>MTN Business</b> s'adresse aux entreprises. Un gabarit fixe, avec un en-tête de marque, un bloc prix jaune et un bandeau de contact, permet de lancer chaque offre vite et de façon reconnaissable : Tinda pour les SMS en masse, puis le terminal MTN POS.</p>
+      <dl class="meta">
+        <dt>Client</dt><dd>MTN Congo</dd>
+        <dt>Agence</dt><dd>Cyclone</dd>
+        <dt>Format</dt><dd>Posts 4:5, visuel paysage</dd>
+      </dl>
+      <div class="swatches" aria-label="Palette"><i style="background:#FFCB05"></i><i style="background:#111111"></i><i style="background:#14306B"></i><i style="background:#FFFFFF"></i></div>
+    </div>
+    <div class="bento">
+      <figure class="s6 ratio-pelissa"><img loading="lazy" src="img/digital-pelissa.jpg" alt="Pélissa Bonana : un homme en costume pagne abaisse un interrupteur géant jaune devant des lots, « KDO, smartphones, box, MoMo… et vos fêtes s'illuminent »"><figcaption>Pélissa Bonana</figcaption></figure>
+      <figure class="s3 tall"><img loading="lazy" src="img/digital-business-2.jpg" alt="MTN Business, Tinda : Brazzaville de nuit avec des notifications de messages envoyés, « votre message partout à Brazzaville, en un instant »"><figcaption>Tinda</figcaption></figure>
+      <figure class="s3 tall"><img loading="lazy" src="img/digital-business-1.jpg" alt="MTN Business, Tinda : un entrepreneur devant son ordinateur, des bulles « Message envoyé »"></figure>
+      <figure class="s3 tall"><img loading="lazy" src="img/digital-business-4.jpg" alt="MTN Business : une femme tend un terminal MTN POS devant le magasin Orca de Pointe-Noire"><figcaption>MTN POS</figcaption></figure>
+      <figure class="s3 tall"><img loading="lazy" src="img/digital-business-3.jpg" alt="MTN Business : un homme en costume présente un terminal MTN POS devant un stand MTN Business"></figure>
+    </div>
+  </div>
+</article>
+
+<!-- GALERIE MTN -->
+<section class="gallery" id="selection">
+  <div class="wrap">
+    <div class="gal-grid">
+      <div class="card intro">
+        <h4>Sélection 2024–2026</h4>
+        <p>Campagnes et identités pour MTN Congo et d'autres marques. Chaque projet est détaillé sur Behance.</p>
+      </div>
+      <figure class="card"><div class="img"><img loading="lazy" src="img/mtn-sepela.jpg" alt="Panneau Sepela édition 2 MTN MoMo"></div><figcaption><h4>Sepela éd. 2</h4><p>MTN MoMo · jeu promotionnel</p><a href="https://www.behance.net/gallery/235877749/CAMPAGNE-SEPELA" target="_blank" rel="noopener">Voir sur Behance</a></figcaption></figure>
+      <figure class="card"><div class="img"><img loading="lazy" src="img/mtn-boss.jpg" alt="Affiche nocturne BOSS Card, « Ce soir, c'est toi la BOSSS »"></div><figcaption><h4>BOSS Card</h4><p>Campagne carte de paiement</p><a href="https://www.behance.net/gallery/253201429/CAMPAGNE-BOSS" target="_blank" rel="noopener">Voir sur Behance</a></figcaption></figure>
+      <figure class="card"><div class="img"><img loading="lazy" src="img/mtn-bts.jpg" alt="Série d'affiches Back to School de la Fondation MTN Congo"></div><figcaption><h4>Back to School</h4><p>Fondation MTN Congo · série de témoignages</p><a href="https://www.behance.net/gallery/236164155/CAMPAGNE-BACK-TO-SCHOOL-FOUNDATION-MTN-CONGO" target="_blank" rel="noopener">Voir sur Behance</a></figcaption></figure>
+      <figure class="card"><div class="img"><img loading="lazy" src="img/mtn-mtntv.jpg" alt="Visuel MTN TV : une main tient un téléphone affichant l'application"></div><figcaption><h4>MTN TV</h4><p>Lancement de l'application</p><a href="https://www.behance.net/gallery/230318793/CAMPAGNE-MTN-TV" target="_blank" rel="noopener">Voir sur Behance</a></figcaption></figure>
+      <figure class="card"><div class="img"><img loading="lazy" src="img/mtn-osiane.jpg" alt="Branding MTN Osiane 2024"></div><figcaption><h4>MTN Osiane 2024</h4><p>Identité événementielle</p><a href="https://www.behance.net/gallery/219199097/Branding-MTN-Osiane-2024" target="_blank" rel="noopener">Voir sur Behance</a></figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<footer class="end">
+  <div class="wrap">
+    <h2 class="display">Travaillons<br><em>ensemble</em></h2>
+    <div class="end-grid">
+      <div><span>E-mail</span><p>tychique.bakala@gmail.com</p></div>
+      <div><span>Téléphone</span><p>+242 06 931 66 66</p></div>
+      <div><span>LinkedIn</span><a href="https://www.linkedin.com/in/tychique-le-saint-bakala-653146172/" target="_blank" rel="noopener">Tychique Le Saint Bakala</a></div>
+      <div><span>Behance</span><a href="https://www.behance.net/tychiqueba791a" target="_blank" rel="noopener">behance.net/tychiqueba791a</a></div>
+    </div>
+    <p class="pdf-end"><a class="pdf-btn light" href="Portfolio-Tychique-Bakala.pdf" download>Télécharger le portfolio en PDF</a></p>
+    <small>© 2026 Tychique Le Saint Bakala Ntsoussou · Brazzaville, Congo. Les marques citées appartiennent à leurs propriétaires.</small>
+  </div>
+</footer>
+
+<dialog id="lb"><button type="button" aria-label="Fermer" id="lbclose">×</button><img id="lbimg" alt=""></dialog>
+
+<script>
+// Bandeau : on duplique le contenu pour une boucle continue
+const t=document.getElementById('track'); t.innerHTML+=t.innerHTML;
+// Agrandir une image au clic
+const lb=document.getElementById('lb'), li=document.getElementById('lbimg');
+document.querySelectorAll('.bento img, .card img').forEach(img=>{
+  img.tabIndex=0;
+  const open=()=>{li.src=img.src;li.alt=img.alt;lb.showModal();};
+  img.addEventListener('click',open);
+  img.addEventListener('keydown',e=>{if(e.key==='Enter')open();});
+});
+document.getElementById('lbclose').addEventListener('click',()=>lb.close());
+lb.addEventListener('click',e=>{if(e.target===lb)lb.close();});
+</script>
+
+</body>
+</html>
